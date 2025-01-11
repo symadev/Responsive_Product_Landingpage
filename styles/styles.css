@@ -134,3 +134,71 @@ text-align: center;
 padding: 40px;
 
 }
+
+
+
+
+
+
+
+
+/* mobile devices */
+
+@media screen  and (max-width: 576px){
+
+    
+    
+    nav >ul{
+flex-direction: column;
+
+
+    }
+    .button-primary, .same-btn {
+        width: 100%;
+        padding: 0px;
+    }
+    .banner-section{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin:8px;
+    }
+    
+   
+
+   .image-section  img{
+max-width:200%;
+flex-direction: column;
+
+   }  
+
+   .container {
+    display: grid;
+    grid-template-columns: 1fr; /* One column layout */
+    gap: 15px;
+}
+
+.bags {
+    max-width: 100%;
+    margin: 0 auto; /* Center each bag item */
+    text-align: center;
+}
+
+.bags img {
+    width: 50%; /* Make the image fill its container */
+    
+}
+
+
+    
+    
+ 
+}
+
+
+
+
+
+
+
+
