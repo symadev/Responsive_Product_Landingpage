@@ -1,0 +1,136 @@
+*{
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+nav{
+
+padding: 20px;
+display: flex;
+justify-content: space-between;
+background-color: #7e7d7e;
+text-align: center;
+color: aliceblue;
+
+}
+nav>ul{
+
+    display: flex;
+    list-style:none ;
+}
+nav a{
+
+    text-decoration: none;
+    font-size: 20px;
+    width: 50%;
+    color: rgb(254, 252, 252);
+    margin: 30px;
+   
+    
+   
+}
+.button-primary{
+
+padding-left: 20px;
+padding-right: 20px;
+font-size: 20px;
+background-color: #f788a4;
+border: 0;
+border-radius: 3px;
+margin: 10px;
+}
+.banner-section{
+display: flex;
+margin: 100px;
+gap: 20px;
+background-color: darkgrey;
+justify-content: space-between;
+   
+}
+.title-section{
+margin: 100px;
+
+
+
+}
+.section-title{
+    
+    font-size: 100px;
+    margin: 0;
+}
+.new-mens-section{
+
+    font-size: 40px;
+    margin: 0;
+    font-style: italic;
+ 
+}
+.image-section{
+
+    width: 40%;
+   padding: 25px;
+}
+.same-btn{
+    font-size: 20px;
+    background-color: rgb(121, 120, 120);
+    border:2px solid rgb(245, 135, 153);
+    border-radius: 6px;
+    margin: 10px;
+   
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top:20px ;
+  padding-bottom: 20px;
+  color: aliceblue;
+}
+
+.products{
+
+    text-align: center;
+    margin:20px;
+}
+
+.container{
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+margin: 20px;
+
+
+}
+.bags{
+    box-shadow:0px 4px 30px 0px rgba(0, 0, 0, 0.60); 
+    margin: 10px;
+    border: 4px solid rgb(248, 246, 246);
+    font-size: medium;
+    background-color: #f7f6f7;
+    gap:3px;
+}
+.bags img{
+
+width: 50%;
+padding: 60px;
+
+
+}
+.head{
+
+    text-align: center;
+}
+.head-2{
+
+    text-align: center; 
+}
+
+
+.main-footer{
+
+margin: 20px;
+background-color: #7e7d7e;
+color: #f7f6f7;
+text-align: center;
+padding: 40px;
+
+}
