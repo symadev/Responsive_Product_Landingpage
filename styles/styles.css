@@ -1,212 +1,180 @@
-*{
-
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav{
-
-padding: 20px;
-display: flex;
-justify-content: space-between;
-background-color: #7e7d7e;
-text-align: center;
-color: aliceblue;
-
-}
-nav>ul{
-
+/* Navigation Bar */
+nav {
+    padding: 20px;
     display: flex;
-    list-style:none ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7e7d7e;
+    color: aliceblue;
 }
-nav a{
 
+nav > ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
     text-decoration: none;
     font-size: 20px;
-    width: 50%;
     color: rgb(254, 252, 252);
-    margin: 30px;
-   
-    
-   
+    margin: 0 20px;
 }
-.button-primary{
 
-padding-left: 20px;
-padding-right: 20px;
-font-size: 20px;
-background-color: #f788a4;
-border: 0;
-border-radius: 3px;
-margin: 10px;
-}
-.banner-section{
-display: flex;
-margin: 100px;
-gap: 20px;
-background-color: darkgrey;
-justify-content: space-between;
-   
-}
-.title-section{
-margin: 100px;
-
-
-
-}
-.section-title{
-    
-    font-size: 100px;
-    margin: 0;
-}
-.new-mens-section{
-
-    font-size: 40px;
-    margin: 0;
-    font-style: italic;
- 
-}
-.image-section{
-
-    width: 40%;
-   padding: 25px;
-}
-.same-btn{
+.button-primary {
+    padding: 10px 20px;
     font-size: 20px;
+    background-color: #f788a4;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Banner Section */
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    background-color: darkgrey;
+}
+
+.title-section {
+    width: 50%;
+}
+
+.section-title {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.new-mens-section {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.image-section {
+    width: 40%;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.same-btn {
+    font-size: 18px;
+    padding: 10px 20px;
     background-color: rgb(121, 120, 120);
-    border:2px solid rgb(245, 135, 153);
+    border: 2px solid rgb(245, 135, 153);
     border-radius: 6px;
-    margin: 10px;
-   
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top:20px ;
-  padding-bottom: 20px;
-  color: aliceblue;
+    color: aliceblue;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
-.products{
-
+/* Products Section */
+.products {
     text-align: center;
-    margin:20px;
+    margin: 20px 0;
 }
 
-.container{
-
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 10px;
-margin: 20px;
-
-
-}
-.bags{
-    box-shadow:0px 4px 30px 0px rgba(0, 0, 0, 0.60); 
-    margin: 10px;
-    border: 4px solid rgb(248, 246, 246);
-    font-size: medium;
-    background-color: #f7f6f7;
-    gap:3px;
-}
-.bags img{
-
-width: 50%;
-padding: 60px;
-
-
-}
-.head{
-
-    text-align: center;
-}
-.head-2{
-
-    text-align: center; 
-}
-
-
-.main-footer{
-
-margin: 20px;
-background-color: #7e7d7e;
-color: #f7f6f7;
-text-align: center;
-padding: 40px;
-
-}
-
-
-
-
-
-
-
-
-/* mobile devices */
-
-@media screen  and (max-width: 576px){
-
-    
-    
-    nav >ul{
-flex-direction: column;
-
-
-    }
-    .button-primary, .same-btn {
-        width: 100%;
-        padding: 0px;
-    }
-    .banner-section{
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        margin:8px;
-    }
-    
-   
-
-   .image-section  img{
-max-width:200%;
-flex-direction: column;
-
-   }  
-
-   .container {
+.container {
     display: grid;
-    grid-template-columns: 1fr; /* One column layout */
-    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
 .bags {
-    max-width: 100%;
-    margin: 0 auto; /* Center each bag item */
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border: 2px solid rgb(248, 246, 246);
+    background-color: #f7f6f7;
     text-align: center;
 }
 
 .bags img {
-    width: 50%; /* Make the image fill its container */
-    
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-
-    
-    
- 
+.head, .head-2 {
+    margin: 5px 0;
 }
 
+/* Footer */
+.main-footer {
+    margin: 20px 0;
+    background-color: #7e7d7e;
+    color: #f7f6f7;
+    text-align: center;
+    padding: 20px;
+}
 
-
-
-
-@media screen and (min-width: 576px) and (max-width: 960px) {
-
-    .banner-section {
-  flex-direction: column;      
-  margin:0;
+/* Mobile Devices - Small Screens */
+@media screen and (max-width: 576px) {
+    nav > ul {
+        flex-direction: column;
+        align-items: center;
     }
 
+    nav a {
+        margin: 10px 0;
+    }
 
-    
-    
+    .button-primary, .same-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .banner-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .image-section img {
+        width: 100%;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* One column layout */
+    }
+
+    .bags img {
+        height: auto;
+    }
+}
+
+/* Medium Devices - Tablets */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .banner-section {
+        flex-direction: row;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .title-section, .image-section {
+        width: 45%;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+        gap: 15px;
+    }
 }
